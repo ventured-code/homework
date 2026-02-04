@@ -1,10 +1,98 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 80px 1fr;
+    text-align: center;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    height: 100vh;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.skill {
+    border-radius: 16px;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 15px;
+}
+main {
+    grid-area: main;
+    padding: 20px;
+    overflow-y: auto;
+    background: white;
+}
+header {
+    grid-area: header;
+    padding: 0;
+    text-align: center;
+}
+div {
+    margin-bottom: 40px;
+}
+nav {
+    grid-area: sidebar;
+    padding: 20px;
+    background-color: black;
+    position: relative;
+    text-align: start;
+    height: 100%;
+    width: 200px;
+    font-size: 20px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 25px;
+    color:darkgray;
+}
+nav a:hover{
+    color:azure;
+}
+footer {
+    position: relative;
+    grid-area: footer;
+    text-align: center;
+    width: 100%;
+    color: aliceblue;
+    background-color: black;
+    bottom: 0;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    margin: 5px;
+}
+.wilt {
+    background: #fafafa;
+    padding: 15px;
+    border: 1px solid #ddd
+}
 img {
     border-radius: 15px;
 }
-body {
-    background-color: #e3ddd7;
+#r {
+    display: block;
+    color: maroon;
 }
-ol {
-    text-align: center;
-    list-style-position: inside;
+#r:hover {
+    color: red;
 }
